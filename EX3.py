@@ -6,9 +6,9 @@ class Case(QWidget):
     def __init__(self):
         QWidget.__init__(self)
 
-        self.setFixedSize(400,300)
+        self.setFixedSize(400, 300)
         self.setWindowTitle("IHM")
-        icon = QIcon('https://drive.google.com/file/d/1rRc9g8vKTRm5GZGAh68T0Izv2kwM2A7l/view')
+        icon = QIcon(r'C:\Users\hugoh\Downloads\fr-flag.png')     #problème
         self.setWindowIcon(icon)
         layout = QGridLayout()
         label = QLabel("Hello World")
@@ -26,9 +26,9 @@ class Case(QWidget):
 
         self.setLayout(layout)
 
-if __name__ == "__main__":
-   app = QApplication([])
-   win = Case()
-   win.show()
-   app.exec_()
 
+if __name__ == "__main__":
+    app = QApplication([])
+    win = Case()
+    win.show()
+    app.exec_()

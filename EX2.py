@@ -12,9 +12,10 @@ class Fenetre(QWidget):
         button2 = QPushButton("Cancel")
         text = QTextEdit()
 
-        layout.addWidget(label)     #Ajout des widgets dans le layout
-        layout.addWidget(text)
-        layout.addWidget(button1), layout.addWidget(button2)
+        layout.addWidget(label,0,0,1,2)     #Ajout des widgets dans le layout
+        layout.addWidget(text,1,0,1,2)
+        layout.addWidget(button1,2,0,1,1)
+        layout.addWidget(button2,2,1,1,1)
 
 
 
